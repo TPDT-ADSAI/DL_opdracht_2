@@ -3,6 +3,7 @@ venv_gpu/
 .venv/
 data/
 .ipynb_checkpoints/
+tmp_notebook_outputs/
 __pycache__/
 *.py[cod]
 *.log
