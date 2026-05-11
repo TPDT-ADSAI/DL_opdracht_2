@@ -1,3 +1,11 @@
 venv/
-data/
 venv_gpu/
+.venv/
+data/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.log
+.env
+submission*.csv
+models/distilbert_lyrics_genre/
