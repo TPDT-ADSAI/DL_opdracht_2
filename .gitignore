@@ -8,5 +8,11 @@ __pycache__/
 *.py[cod]
 *.log
 .env
+kaggle.json
+.kaggle/
+.claude/
 submission*.csv
+submissions/
+_patch_notebook.py
+_*.py
 models/distilbert_lyrics_genre/
