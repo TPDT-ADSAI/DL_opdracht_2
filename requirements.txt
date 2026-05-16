@@ -20,7 +20,7 @@ opencv-python-headless>=4.8   # headless = geen GUI libs, kleiner op RunPod
 librosa>=0.10
 
 # --- deep learning ---
-tensorflow==2.17.0   # Keras 3 is meegebakken; werkt naast torch
+tensorflow[and-cuda]==2.18.0   # brengt eigen CUDA libs mee; werkt naast torch op RunPod
 transformers>=4.40,<4.50
 datasets>=2.18,<3.0
 evaluate>=0.4
