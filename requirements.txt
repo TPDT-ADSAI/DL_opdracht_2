@@ -20,7 +20,7 @@ opencv-python-headless>=4.8   # headless = geen GUI libs, kleiner op RunPod
 librosa>=0.10
 
 # --- deep learning ---
-tensorflow[and-cuda]==2.18.0   # brengt eigen CUDA libs mee; werkt naast torch op RunPod
+tensorflow==2.18.0   # gebruikt torch's CUDA 12.8 libs via LD_LIBRARY_PATH shim in cel 0
 transformers>=4.40,<4.50
 datasets>=2.18,<3.0
 evaluate>=0.4
