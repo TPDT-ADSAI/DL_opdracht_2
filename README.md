@@ -17,13 +17,18 @@ Deze repo bevat het notebook voor Deep Learning Portfolioopdracht 2. Het noteboo
 
 ## Data
 
-De Kaggle-data staat niet in git. De notebook zoekt de data automatisch op gangbare locaties, inclusief:
+De Kaggle-data staat **niet** in git (zie `.gitignore`). Leg de dataset zelf in de map `data/` naast `main.ipynb`:
 
 ```text
-C:\Users\fspar_7ib22z2\Downloads\karaoke-k-klassificatie-2026
+DL_opdracht_2/
+  data/
+    karaoke-k-klassificatie-2026/
+      train.csv
+      test.csv
+      ...
 ```
 
-Een andere locatie kan worden gebruikt door `KARAOKE_DATA_DIR` te zetten of een pad mee te geven aan `loading_data(path)`.
+Het notebook detecteert `./data/` automatisch. Een ander pad kan via `KARAOKE_DATA_DIR` of `loading_data(path)`.
 
 ## Uitvoeren
 
@@ -40,7 +45,7 @@ Open daarna `main.ipynb` en voer de cellen in volgorde uit. Gebruik bij voorkeur
 Geteste pod: **RunPod PyTorch 2.8.0**, 1x RTX 6000 Ada (48 GB VRAM, 62 GB RAM, 14 vCPU).
 
 1. Start de pod met de PyTorch 2.8 template. `torch` + CUDA 12 zitten al in de image, dus `requirements.txt` pint torch niet.
-2. Upload de dataset naar de pod, bijvoorbeeld in `/workspace/DL_opdracht_2/data/karaoke-k-klassificatie-2026/` (of in `data/` naast `main.ipynb`).
+2. Leg de dataset zelf in `data/karaoke-k-klassificatie-2026/` naast `main.ipynb` (data zit niet in deze repo).
 3. Open `main.ipynb` in Jupyter en draai **cel 0** (`RUNPOD_BOOTSTRAP`). Die installeert alle ontbrekende dependencies via pip en zet `KARAOKE_DATA_DIR` automatisch als `./data/` bestaat.
 4. Draai de rest van het notebook van boven naar beneden.
 
