@@ -8,7 +8,7 @@ Het notebook werkt vijf onderdelen uit:
 - Opdracht 2: audio CRNN (Conv1D + Bi-LSTM) op MFCC + delta features.
 - Opdracht 3: Bi-LSTM op opgeschoonde songteksten.
 - Opdracht 4: DistilBERT fine-tuning op songteksten via Hugging Face.
-- Opdracht 5: soft-voting ensemble van audio CRNN en DistilBERT.
+- Opdracht 5: soft-voting ensemble van statistische audiofeatures en TF-IDF lyrics.
 
 ## Bestanden
 
